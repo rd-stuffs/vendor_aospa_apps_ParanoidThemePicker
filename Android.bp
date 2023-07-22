@@ -119,18 +119,8 @@ android_app {
     required: [
         "privapp_whitelist_com.android.wallpaper",
         "default_permissions_com.android.wallpaper",
-        "ParanoidColorStub",
+        "ThemesStub",
     ],
-}
-
-android_app {
-    name: "ParanoidColorStub",
-    manifest: "AndroidManifest-Stub.xml",
-    resource_dirs: ["res-stub"],
-
-    certificate: "platform",
-    product_specific: true,
-    sdk_version: "current",
 }
 
 prebuilt_etc {
