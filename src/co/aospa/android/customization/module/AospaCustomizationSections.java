@@ -48,6 +48,9 @@ import co.aospa.android.customization.model.font.FontManager;
 import co.aospa.android.customization.model.font.FontSectionController;
 import co.aospa.android.customization.model.iconpack.IconPackManager;
 import co.aospa.android.customization.model.iconpack.IconPackSectionController;
+import co.aospa.android.customization.model.iconshape.IconShapeManager;
+import co.aospa.android.customization.model.iconshape.IconShapeSectionController;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -200,6 +203,10 @@ public final class AospaCustomizationSections implements CustomizationSections {
         sectionControllers.add(new FontSectionController(
                 FontManager.getInstance(activity, new OverlayManagerCompat(activity)), sectionNavigationController));
 
+        // Icon shape selection section.
+        sectionControllers.add(new IconShapeSectionController(
+                IconShapeManager.getInstance(activity, new OverlayManagerCompat(activity)), sectionNavigationController));
+
         return sectionControllers;
     }
 
@@ -271,6 +278,10 @@ public final class AospaCustomizationSections implements CustomizationSections {
         // Font selection section.
         sectionControllers.add(new FontSectionController(
                 FontManager.getInstance(activity, new OverlayManagerCompat(activity)), sectionNavigationController));
+
+        // Icon shape selection section.
+        sectionControllers.add(new IconShapeSectionController(
+                IconShapeManager.getInstance(activity, new OverlayManagerCompat(activity)), sectionNavigationController));
 
         return sectionControllers;
     }

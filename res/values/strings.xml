@@ -18,5 +18,6 @@
 
     <string name="icon_pack_title">System icon pack</string>
     <string name="font_title">System font</string>
+    <string name="icon_shape_title">Icon shape</string>
 
 </resources>
