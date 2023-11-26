@@ -19,7 +19,6 @@ import com.android.customization.model.color.WallpaperColorResources;
 
 public class ImageWallpaperColorThemePreviewFragment extends ImagePreviewFragment implements WallpaperColorThemePreview {
     private boolean mIgnoreInitialColorChange;
-    private boolean mThemedIconSupported;
     private WallpaperColors mWallpaperColors;
 
     @Override
@@ -34,7 +33,6 @@ public class ImageWallpaperColorThemePreviewFragment extends ImagePreviewFragmen
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mThemedIconSupported = determineThemedIconsSupport(context);
     }
 
     @Override
@@ -78,10 +76,5 @@ public class ImageWallpaperColorThemePreviewFragment extends ImagePreviewFragmen
         }
         mIgnoreInitialColorChange = false;
         super.onWallpaperColorsChanged(wallpaperColors);
-    }
-
-    @Override
-    public boolean shouldUpdateWorkspaceColors() {
-        return mThemedIconSupported;
     }
 }
