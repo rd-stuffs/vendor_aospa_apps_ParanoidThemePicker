@@ -44,4 +44,11 @@
 
     <!-- Height of options in the wallpaper quick switch widget. -->
     <dimen name="wallpaper_quick_switch_selected_option_height">0dp</dimen>
+
+    <!-- Bottom action item -->
+    <style name="BottomActionItemStyle">
+        <item name="android:colorBackground">@color/system_surface_container</item>
+    </style>
+
+    <color name="toolbar_color">@color/system_surface_container</color>
 </resources>
