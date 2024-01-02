@@ -29,4 +29,8 @@
     <string name="red_color_name">Red</string>
     <string name="bundle_name_red">@string/red_color_name</string>
 
+    <!-- Monochromatic -->
+    <string name="color_name_monochromatic">Monochromatic</string>
+    <string name="bundle_name_monochromatic">@string/color_name_monochromatic</string>
+
 </resources>

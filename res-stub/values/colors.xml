@@ -28,4 +28,8 @@
     <color name="color_primary_red">#eb0028</color>
     <color name="color_secondary_red">#eb0028</color>
 
+    <!-- Monochromatic -->
+    <color name="color_primary_monochromatic">#ff666666</color>
+    <color name="color_secondary_monochromatic">#ff333333</color>
+
 </resources>
