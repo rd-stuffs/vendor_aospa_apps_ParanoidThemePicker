@@ -27,7 +27,7 @@
         android:paddingHorizontal="@dimen/option_tile_padding_horizontal"
         android:paddingVertical="@dimen/option_tile_padding_vertical"
         android:layout_marginHorizontal="@dimen/component_options_margin_horizontal"
-        android:background="@drawable/option_item_background">
+        android:background="@drawable/option_border_custom">
         <ImageView
             android:id="@+id/option_icon"
             android:layout_width="@dimen/component_icon_thumb_size"
